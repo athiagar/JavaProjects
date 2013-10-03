@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ShoppingCart</display-name>
+  <welcome-file-list>
+    <welcome-file>Login.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+      <servlet-name>Login</servlet-name>
+      <jsp-file>/Login.jsp</jsp-file>
+      
+ </servlet>
+ <servlet-mapping>
+      <servlet-name>Login</servlet-name>
+      <url-pattern>/Login</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+      <servlet-name>loginCheck</servlet-name>
+      <jsp-file>/loginCheck.jsp</jsp-file>
+ </servlet>
+ <servlet-mapping>
+      <servlet-name>loginCheck</servlet-name>
+      <url-pattern>/loginCheck</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+      <servlet-name>inventory</servlet-name>
+      <jsp-file>/inventory.jsp</jsp-file>
+ </servlet>
+ <servlet-mapping>
+      <servlet-name>inventory</servlet-name>
+      <url-pattern>/inventory</url-pattern>
+ </servlet-mapping>
+  <servlet>
+      <servlet-name>createuser</servlet-name>
+      <jsp-file>/createuser.jsp</jsp-file>
+ </servlet>
+ <servlet-mapping>
+      <servlet-name>createuser</servlet-name>
+      <url-pattern>/createuser</url-pattern>
+ </servlet-mapping>
+   <servlet>
+      <servlet-name>error</servlet-name>
+      <jsp-file>/error.jsp</jsp-file>
+ </servlet>
+ <servlet-mapping>
+      <servlet-name>error</servlet-name>
+      <url-pattern>/error</url-pattern>
+ </servlet-mapping>
+</web-app>
